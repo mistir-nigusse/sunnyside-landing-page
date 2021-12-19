@@ -1,0 +1,579 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size:4vh;
+  
+
+}
+
+
+#Grid{
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100vh 100vh 100vh 100vh 100vh 70vh 70vh;
+ grid-template-areas: 
+   "header header"
+   "transformm transformimg"
+   "brandimg brand"
+   "graphics photography"
+   "testmonials testmonials"
+   "images images"
+   "footer footer"
+}
+
+.header{
+  grid-area: header;
+  background-image: url('images/desktop/image-header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  color: white;
+
+
+}
+
+#About{
+  
+} 
+.logo{
+  height:4vh;
+  margin-top: 5vh;
+
+
+}
+
+
+ 
+
+
+.header  ul{
+  float: right;
+  margin-top: 3vh;
+}
+.about  li{
+  display: inline;
+  padding: 3vw;
+  font-size: 3vh;
+}
+.respo li{
+  display: inline;
+  padding: 3vw;
+  font-size: 3vh;
+
+}
+.fas.fa-bars{
+  font-size: 4vh;
+  display: none;
+  float:right;
+}
+.about ul.nav_items  a:link {
+      text-decoration: none;
+      color: white;
+}
+.about ul.nav_items  a:visited{
+    background-color: #03b1fc;
+    color: white;
+    padding-left:3vh;
+  padding-right:3vh;
+  padding-top:3vh;
+  padding-bottom: 2vh;
+  border-radius: 5vh;
+
+}
+.about ul.nav_items  a:hover{
+  background-color: white;
+  color: black;
+  padding-left:3vh;
+  padding-right:3vh;
+  padding-top:2vh;
+  padding-bottom:2vh;
+  font-weight: bold;
+  border-radius: 5vh;
+}
+
+ h1{
+  padding-top: 15vh;
+     clear: both;    
+     text-align: center;
+     font-size: 8vh;
+     font-weight: bolder;
+     letter-spacing:2vh;
+     text-transform: uppercase;
+}
+
+
+.transform{
+  grid-area: transformm;
+  padding:20%;
+
+}
+.arrow{
+  margin-left: 47%;
+  padding-top: 15vh;
+  height:40vh;
+  width:3vw;
+}
+
+
+.transformimg{
+  grid-area: transformimg;
+  background-image: url('images/desktop/image-transform.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.brandimg{
+  grid-area: brandimg;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  background-image: url('images/desktop/image-stand-out.jpg');
+}
+.brand{
+  grid-area: brand;
+  padding:20%;
+}
+.graphics{
+  grid-area: graphics;
+  padding-top:70%;
+  text-align: center;
+   padding-left: 10%;
+  padding-right: 10%;
+  color: hsl(167, 40%, 24%);
+  background-image: url('images/desktop/image-graphic-design.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+.photography{
+  grid-area: photography;
+  padding-top:70%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: hsl(198, 62%, 26%);
+  text-align: center;
+  background-image: url('images/desktop/image-photography.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+h3{
+  font-size: 4vh;
+  padding-bottom: 5%;
+
+}
+h6{
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+h6 a:link{
+   text-decoration: underline;
+  text-decoration-color: yellow;
+  color: black
+
+}
+h6 a:visited{
+   text-decoration: underline;
+  text-decoration-color: yellow;
+  color: black
+
+}
+.testmonials{
+  grid-area: testmonials;
+}
+#Projects{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: 
+  "title title title"
+  "emily thomas jennie";
+}
+#Projects h4{
+  grid-area: title;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 3.5vh;
+  text-transform: uppercase;
+  letter-spacing: 1vh;
+  color: #807f7d;
+}
+#Projects img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+#Projects p{
+  padding-top: 20%;
+  color: #807f7d;
+  font-size: 3vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.name{
+  font-weight: bold;
+  font-size: 3vh;
+  padding-top: 15%;
+}
+.position{
+  color: #b5b4b3;
+  font-size: 2vh;
+  padding-top: 5%;
+}
+.emily{
+  grid-area: emily;
+  padding-top: 25%;
+}
+.thomas{
+  grid-area: thomas;
+  padding-top: 25%;
+}
+.jennie{
+  grid-area: jennie;
+  padding-top: 25%;
+}
+
+
+#Grid_image{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "image1 image2 image3 image4";
+  grid-area:images;
+}
+
+
+.image1{
+   grid-area:image1;
+   background-image: url('images/desktop/image-gallery-milkbottles.jpg');
+   background-position: center;
+   background-size: cover;
+
+}
+.image2{
+  grid-area:image2;
+     background-image: url('images/desktop/image-gallery-orange.jpg');
+   background-position: center;
+   background-size: cover;
+
+
+  
+}
+
+.image3{
+  grid-area:image3;
+     background-image: url('images/desktop/image-gallery-cone.jpg');
+   background-position: center;
+   background-size: cover;
+
+
+}
+.image4{
+  grid-area: image4;
+     background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
+   background-position: center;
+   background-size: cover;
+
+
+}
+
+.footer{
+  grid-area: footer;
+  background-color:  hsl(167, 40%, 65%);
+  text-align: center;
+  padding:40px;
+  color:  hsl(167, 40%, 24%);
+}
+
+footer h2{
+  font-weight: bolder;
+  padding: 15px;
+}
+#footer_nav li{
+  display:inline;
+  font-size: 3vh;
+}
+footer nav{
+   padding: 40px;
+}
+footer nav a:link{
+      color:  hsl(167, 40%, 24%);
+      text-decoration: none;
+}
+footer nav a {
+  padding: 40px;
+}
+
+
+footer nav a:active{
+     color: white;
+}
+footer nav a:visited{
+     color: hsl(167, 40%, 24%);
+}
+
+#Social_icons{
+  padding-bottom: 20px;
+
+}
+#Social_icons a{
+    padding :8px;
+}
+#Social_icons a:active{
+    fill:  white;
+}
+.attribution{
+  padding:25px;
+  font-size: 2vh;
+}
+
+
+
+@media only screen and ( max-width : 450px ){
+*{
+  font-size: 2.5vh;
+}
+
+
+#Grid{
+  display: grid;
+  height: 750vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 100vh 50vh 50vh 50vh 50vh 75vh 75vh 250vh 50vh 60vh;
+ grid-template-areas: 
+   "header"
+   "transformimg"
+   "transformm"
+   "brandimg"
+   "brand"
+   "graphics" 
+   "photography"
+   "testmonials"
+   
+    "images"
+   "footer"
+}
+.header{
+  grid-area: header;
+  background-image: url('images/mobile/image-header.jpg');
+ }
+ 
+
+ .about li{
+  display:none;
+
+ }
+ .about h1{
+  font-size: 4.5vh;
+  font-weight:bold; }
+.about img.arrow{
+  height: 30vh;
+  width:5vw;
+}
+.about .fas.fa-bars{
+  font-size: 35px;
+  margin-top: 12px;
+  color: white;
+  display:inline;
+  float: right;
+
+}
+.respo ul.nav_items{
+  background-color: white;
+  margin-top: 75px;
+
+}
+ .respo li{
+  display: block;
+  font-size: 20px;
+  padding-top:30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+
+ } 
+
+
+ .respo .fas.fa-bars{
+    font-size: 35px;
+  margin-top: 12px;
+  color: white;
+  display:inline;
+  float: right;
+ }
+ .respo ul.nav_items  a:link {
+      text-decoration: none;
+      color:  #75746f;
+}
+.respo ul.nav_items  a:visited{
+    color: #75746f;
+    padding-left:3vh;
+  padding-right:3vh;
+  padding-top:3vh;
+  padding-bottom: 2vh;
+  border-radius: 5vh;
+
+}
+.respo ul.nav_items  a:hover{
+  background-color:#f0c63c;
+  color: black;
+  padding-left:3vh;
+  padding-right:3vh;
+  padding-top:2vh;
+  padding-bottom:2vh;
+  font-weight: bolder;
+  border-radius: 5vh;
+}
+
+
+ 
+ .respo h1{
+  display:none;
+
+ }
+ .respo img.arrow{
+  display: none;
+ }
+
+ .transformimg{
+  grid-area: transformimg;
+  background-image: url('images/mobile/image-transform.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .transform{
+  grid-area: transformm;
+  padding-top: 50px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+ }
+ .brandimg{
+  grid-area: brandimg;
+  background-image: url('images/mobile/image-stand-out.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+.brand{
+  grid-area: brand;
+   padding-top: 50px;
+
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+
+}
+.graphics{
+    grid-area: graphics;
+  background-image: url('images/mobile/image-graphic-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+   padding-top:350px;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.photography{
+  grid-area: photography;
+   padding-top:350px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  text-align: center;
+  background-image: url('images/mobile/image-photography.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testmonials{
+  grid-area: testmonials;
+}
+#Projects{
+  display: grid;
+  text-align:center;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 30% 30% 30%;
+  grid-template-areas: "title"
+                       "emily"
+                       "thomas"
+                       "jennie"
+}
+
+#Projects h4{
+  grid-area: title;
+  padding-top: 80px;
+
+}
+.emily{
+  grid-area: emily;
+  padding-top: 40px;
+}
+.thomas{
+  grid-area: thomas;
+  padding-top: 80px;
+}
+.jennie{
+  grid-area: jennie;
+  padding-top: 80px;
+}
+#Grid_image{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "image1 image2" "image3 image4";
+  grid-area:images;
+}
+.image1{
+   grid-area:image1;
+   background-image: url('images/mobile/image-gallery-milkbottles.jpg');
+   background-position: center;
+   background-size: cover;
+
+}
+.image2{
+  grid-area:image2;
+     background-image: url('images/mobile/image-gallery-orange.jpg');
+   background-position: center;
+   background-size: cover;
+
+
+  
+}
+
+.image3{
+  grid-area:image3;
+     background-image: url('images/mobile/image-gallery-cone.jpg');
+   background-position: center;
+   background-size: cover;
+
+
+}
+.image4{
+  grid-area: image4;
+     background-image: url('images/mobile/image-gallery-sugar-cubes.jpg');
+   background-position: center;
+   background-size: cover;
+
+
+}
+
+.footer{
+  grid-area: footer;
+}
+#footer_nav li{
+  display: inline;
+
+}
+
+}
